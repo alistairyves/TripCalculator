@@ -15,5 +15,4 @@ table = soup.find("table", {"class": "wikitable sortable"})
 for row in table.findAll("tr"):
     cells = row.findAll("td")
     if (len(cells) > 0):
-        print cells[3].find(text=True)+ ", " + cells[0].find(
-            text=True)
+        print cells[3].find(text=True)+ ", " + cells[0].find(text=True)
